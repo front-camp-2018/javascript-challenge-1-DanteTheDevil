@@ -4,7 +4,7 @@ export const sortByWeight = arr => {
     const valueOne = [...a].reduce((sum, current) => sum + +(current), 0);
     const valueTwo = [...b].reduce((sum, current) => sum + +(current), 0);
 
-    return valueOne > valueTwo;
+    return valueOne - valueTwo;
   });
   return arr;
 };
